@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sc:schema xmlns:sc="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+    <sc:element name="Scores">
+        <sc:complexType>
+            <sc:sequence>
+                <sc:element name="ListeScores" maxOccurs="unbounded">
+                    <sc:complexType>
+                        <sc:sequence>
+                            <sc:element name="Pseudo" type="sc:string"/>
+                            <sc:element name="Score">
+                                <sc:simpleType>
+                                    <sc:restriction base="sc:int">
+                                        <sc:minInclusive value="0"/>
+                                    </sc:restriction>
+                                </sc:simpleType>
+                            </sc:element>
+                            <sc:element name="Date">
+                                <sc:simpleType>
+                                    <sc:restriction base="sc:string">
+                                        <!-- Date au format YYYY-MM-DD -->
+                                        <sc:pattern value="\d{4}-\d{2}-\d{2}"/>
+                                    </sc:restriction>
+                                </sc:simpleType>
+                            </sc:element>
+                            <sc:element name="Temps">
+                                <sc:simpleType>
+                                    <sc:restriction base="sc:int">
+                                        <sc:minInclusive value="0"/>
+                                    </sc:restriction>
+                                </sc:simpleType>
+                            </sc:element>
+                        </sc:sequence>
+                    </sc:complexType>
+                </sc:element>
+            </sc:sequence>
+        </sc:complexType>
+    </sc:element>
+</sc:schema>

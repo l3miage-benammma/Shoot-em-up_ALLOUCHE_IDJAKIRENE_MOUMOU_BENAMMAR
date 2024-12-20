@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Scores xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ListeScores>
+    <Pseudo>Alice</Pseudo>
+    <Score>100</Score>
+    <Date>2024-12-20</Date>
+    <Temps>30</Temps>
+  </ListeScores>
+  <ListeScores>
+    <Pseudo>Bob</Pseudo>
+    <Score>200</Score>
+    <Date>2024-12-21</Date>
+    <Temps>45</Temps>
+  </ListeScores>
+</Scores>
